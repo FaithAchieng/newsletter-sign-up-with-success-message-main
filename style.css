@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: hsl(234, 29%, 20%);
+    font-family: 'Roboto regular',sans-serif;
+}
+
+@font-face{
+    font-family: 'Roboto bold';
+    src: url('./assets/fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Roboto regular';
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+.update{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 20px;
+    height: 450px;
+    display: none;
+}
+.subscribe{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    margin-top: 10px;
+    margin: 0 auto;
+    width: 30%;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: -10px;
+    
+}
+.down h1{
+    font-size: 40px;
+    margin-top: 10px;
+}
+.update .left{
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.update .right{
+    width: 50%;
+    background: url('./assets/images/illustration-sign-up-desktop.svg');
+    background-repeat: no-repeat;
+    margin-left: 50px;
+    background-size: 300px;
+
+}
+p{
+    font-size: 16px;
+}
+h1{
+    margin-bottom: 20px;
+    font-family: 'Roboto bold',sans-serif;
+}
+.email{
+    border-radius: 5px;
+    width: 90%;
+    height: 35px;
+    border: 1px solid hsl(231, 7%, 60%);
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+.button{
+    border-radius: 5px;
+    width: 92%;
+    height: 45px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    
+}
+.button:hover{
+    background: linear-gradient(45deg,hsl(4, 100%, 67%),hsl(4, 87%, 67%));
+    cursor: pointer;
+    border: 1px solid hsl(4, 100%, 67%);
+}
+.dismiss{
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    height: 45px;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+}
