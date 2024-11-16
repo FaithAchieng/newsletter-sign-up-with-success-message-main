@@ -7,18 +7,20 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+   <script defer src="script.js"></script>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; margin-top: 20px; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  
 </head>
 <body>
 
   <!-- Sign-up form start -->
 <div class="container">
-  <div class="update">
+  <div class="update" id="update">
     <div class="left">
     <h1>Stay updated!</h1>
 
@@ -30,13 +32,13 @@
     <div style="margin-top: 10px;"><img src="./assets/images/icon-list.svg" alt="">
       <p style="margin-left: 30px; margin-top: -25px; margin-bottom: 40px;">And much more!</p></div>
   </p>
-  <form action="" method="get" id="form">
-    <div> <label for="email">Email address</label>
+  <form action="" method="get" name="form" onsubmit="return validateForm()">
+    <div> <label for="email" style="font-family: 'Roboto bold';">Email address</label>
       <br>
-      <input type="email" name="email" class="email" placeholder="email@company.com">
+      <input type="email" name="email" class="email" placeholder="email@company.com" id="email">
   </div>
   
-    <button type="submit" class="button">Subscribe to monthly newsletter</button>
+    <button type="submit" class="button" id="sub">Subscribe to monthly newsletter</button>
   </form>
   </div>
   <div class="right">
@@ -45,7 +47,7 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <div class="subscribe">
+    <div class="subscribe" id="subscribe">
       <div class="up">
       <img src="./assets/images/icon-success.svg" alt="">
     </div>
@@ -55,7 +57,7 @@
     <p style="font-size: 16px;">A confirmation email has been sent to <span style="font-weight: bold;">ash@loremcompany.com.</span> 
     Please open it and click the button inside to confirm your subscription.
   </p>
-    <button class="dismiss">Dismiss message</button>
+    <button class="dismiss" id="dismiss">Dismiss message</button>
   </div>
   </div>
     <!-- Success message end -->
