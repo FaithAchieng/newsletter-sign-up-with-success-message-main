@@ -17,7 +17,7 @@ body{
 .update{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     padding: 10px;
     width: 60%;
@@ -25,7 +25,7 @@ body{
     border-radius: 20px;
     height: 450px;
     margin-top: 40px;
-    display: block;
+    font-family: 'Roboto regular',sans-serif;
 }
 .subscribe{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -36,15 +36,17 @@ body{
     padding: 50px;
     border-radius: 20px;
     margin-bottom: -10px;
-    display: none;
     
+}
+.subscribe.hide{
+    display: none;
 }
 .down h1{
     font-size: 40px;
     margin-top: 10px;
 }
 .update .left{
-  width: 50%;
+  width: 60%;
   margin-top: 50px;
   margin-left: 20px;
 }
@@ -53,7 +55,6 @@ body{
     width: 50%;
     background: url('./assets/images/illustration-sign-up-desktop.svg');
     background-repeat: no-repeat;
-    margin-left: 50px;
     background-size: 300px;
 
 }
