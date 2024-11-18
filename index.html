@@ -31,14 +31,17 @@
       <p style="margin-left: 30px; margin-top: -25px;">Measuring to ensure updates are a success</p></div>
     <div style="margin-top: 10px;"><img src="./assets/images/icon-list.svg" alt="">
       <p style="margin-left: 30px; margin-top: -25px; margin-bottom: 40px;">And much more!</p></div>
+      
   </p>
-  <form action="" method="get" name="form" onsubmit="return validateForm()">
+  <form action="" method="get" name="form" id="form">
     <div> <label for="email" style="font-family: 'Roboto bold';">Email address</label>
       <br>
+      <div class="error" id="error">
+      </div>
       <input type="email" name="email" class="email" placeholder="email@company.com" id="email">
   </div>
   
-    <button type="submit" class="button" id="sub">Subscribe to monthly newsletter</button>
+    <button type="submit" class="button" id="submit">Subscribe to monthly newsletter</button>
   </form>
   </div>
   <div class="right">

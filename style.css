@@ -94,3 +94,30 @@ h1{
     background-color: hsl(234, 29%, 20%);
     color: white;
 }
+.dismiss :hover{
+    background: linear-gradient(45deg,hsl(4, 100%, 67%),hsl(4, 87%, 67%));
+    cursor: pointer;
+    border: 1px solid hsl(4, 100%, 67%);
+}
+.error{
+    margin-left: 150px;
+    color: red;
+    font-size: 12px;
+    
+}
+@media screen and (max-width:768px) {
+    .update{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 600px;
+    }
+    .update .right{
+        margin-top: 0px;
+        width: 100%;
+        background: url("./assets/images/illustration-sign-up-mobile.svg");
+        background-repeat:no-repeat ;
+    }
+    .subscribe{
+        width: 70%;
+    }
+}
